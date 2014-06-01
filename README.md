@@ -20,7 +20,7 @@ $phpmailer = new PHPSMS\PHPSMS($number,$message);
 
 ##To Do:
 
-- [] Get mailer sent
-- [] Abstract set up
-- [] Put on packagist
-- [] Write tests
+- [ ] Get mailer sent
+- [ ] Abstract set up
+- [ ] Put on packagist
+- [ ] Write tests
