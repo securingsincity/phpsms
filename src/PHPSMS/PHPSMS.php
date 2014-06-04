@@ -27,7 +27,7 @@
       foreach($providerList as $provider) {
         $from = 'test@email.com';
         $to = str_replace('%s',$number,$provider);
-        if(mail($to , $message ,$message,$headers)) echo 'success to '.$to.'\n';
+        if(mail($to , $message ,$message)) echo 'success to '.$to.'\n';
       }
 
     }
