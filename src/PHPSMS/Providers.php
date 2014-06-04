@@ -4,7 +4,7 @@ namespace PHPSMS;
     public $us = [
       '%s@email.uscc.net',
       '%s@messaging.sprintpcs.com',
-      '%s@mobile.celloneusa.com',
+      //'%s@mobile.celloneusa.com', slowwwww
       '%s@msg.telus.com',
       '%s@paging.acswireless.com',
       '%s@pcs.rogers.com',

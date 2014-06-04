@@ -5,7 +5,7 @@
   use PHPSMS\Providers;
 
   class PHPSMS {
-    public function __construct($number,$message,$region = 'us') {
+    public function __construct($number,$message,$from=null,$region = 'us') {
       $providers = new Providers();
       $providerList;
 
@@ -25,9 +25,15 @@
       }
 
       foreach($providerList as $provider) {
-        $from = 'test@email.com';
         $to = str_replace('%s',$number,$provider);
-        if(mail($to , $message ,$message)) echo 'success to '.$to.'\n';
+        $headers = null;
+        if ($from) {
+            $headers = 'From: '.$from . "\r\n" .
+            'Reply-To: '.$from . "\r\n";
+        }
+
+        
+        if(mail($to , $message ,$message,$headers)) echo 'success to '.$to.'\n';
       }
 
     }
