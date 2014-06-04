@@ -1,9 +1,12 @@
-phpsms
+PHPSMS
 ======
 
-Php sms mailer based on textbelt https://github.com/typpo/textbelt
+PHP SMS mailer based on textbelt https://github.com/typpo/textbelt
 
-example usage:
+
+###Requires Composer
+
+###Example usage:
 ```
 require 'vendor/autoload.php';
 
@@ -24,8 +27,3 @@ $region = 'canada';
 $phpsms = new PHPSMS\PHPSMS($number,$message,$from,$region);
 
 ```
-
-##To Do:
-
-- [ ] Put on packagist
-- [ ] Write tests
