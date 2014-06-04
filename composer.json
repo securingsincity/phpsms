@@ -1,10 +1,6 @@
 {
     "name": "phpsms/phpsms",
     "description": "The sms mailer based on textbet.",
-
-    "require": {
-        "phpmailer/phpmailer": "dev-master"
-    },
     "autoload": {
       "psr-0": {
             "PHPSMS": "src/"
